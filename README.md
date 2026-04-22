@@ -20,36 +20,58 @@ I'm typically in the More Monsters thread of the mods-dev-research channel.
 
 == Textures .TEX ==
   +Basic repositioning of pixel's data (x/y)
+ 
   +Importing TEX AND individual TIM files (TEX files are just multiple TIMs shoved together)
+
   +Changing bit modes(4-bit, 8-bit) and CLUT table xy positioning
+ 
   +Semi-transparency toggling (applies to the entire TIM file/rectangle, not individual pixels)
+ 
   +Creating new "blank" TIMs to add to TEX files
+
   +Exporting TEX files newly built from what TIMs you import/create
 
+
   -Cannot change the width or height of any imported textures
-  	-[Note]: You'll need to delete the imported original and create a new blank TIM to replace it
+  -[Note]: You'll need to delete the imported original and create a new blank TIM to replace it
+ 
   -No changing individual pixel or CLUT data (the displayed image)
-	  -[Note]: Use TIMBuild for that, blank TIMs are meant to be overwritten using that
+  -[Note]: Use TIMBuild for that, blank TIMs are meant to be overwritten using that
+
   -Viewing actual TIM image not implemented yet. (need to find a way to prevent it from lagging the whole program)
 
 == Models .MM0(MMX/MMJ) ==
+
   +Basic UV positioning and editing (x/y, scale, rotation)
+
   +Box Select to select a group or precise Primitive Select to add/remove from you selection
+  
   +Semi-transparency toggling for individual primitives (primitives are basically polygons)
     -[Note]: This must be toggled on for both the model AND the texture underneath for transparency
+  
   +Changing bit modes(4-bit, 8-bit) and CLUT table xy reading
     -[Note]: Yes, you do have to have both the texture and primitives set to the same bit mode
+  
   +Revert edits of selected primitives to how they were when first imported
+  
   +Primitive Edit Templates. Create templates from current edit highlight.
 	+Use to apply the same exact changes repeatedly to new selections 
+  
   +Exporting as a new MM0 file, with new name
+  
    or    
+  
   +Selectively applying the edited/imput file edits to the various _X variants found in the input directory
 	  -[Note]: The selected files have to actually exist in the imported file's directory
+
   +Vertex changes are applied on export aswell, if you somehow manage to do that outside this tool
+  
   +Exporting as a PSX TMD, for whatever reason...
 
+  
   -No individual editing of the vertices in a primitive, it's the whole primive or nothing
+  
   -Vertex and Normal editing are not available (Maybe in the far future)
+ 
   -No automatic folding or unfolding of selected textures (next update, hopefully)
     
