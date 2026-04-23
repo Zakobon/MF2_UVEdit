@@ -5,10 +5,12 @@ Tool for editing Monster Rancher 2's MMX/MMJ files's UVs
 
 This is still very early in developement, so forgive the cluttered UI. Redoing it will take quite a while and I'd rather focus of implementing missing features for now.
 
-I haven't had time to actually test this (it looks like it works...), so remember to SAVE often by exporting your work.
+It's still pretty untested, so remember to SAVE often by exporting your work.
+
 
 
 == Important ==
+
 
   Bug Reporting: If you come run into any bugs or issues with the exported files, SAVE those files and send them to me so I can inspect what went wrong. 
 I might even be able to fix the file for you. You can me [@Zakobon] in the Monster Rancher Chat Discord[https://discord.gg/r-monsterrancher-chat-221369172234469376]. 
@@ -75,3 +77,18 @@ I'm typically in the More Monsters thread of the mods-dev-research channel.
  
   -No automatic folding or unfolding of selected textures (next update, hopefully)
     
+== Tips ==
+
+You can revert any selected primitives back to their imported state with the "Revert Edits" button. It's quick and can be done whenever and affects individual primitives, not the entire group you had originally edited. If you spot a primitive that was accidently grabbed and warped beyond recognition from wayyy back when you started, just select it and revert. (There is no "Revert: Revert Edits" button, maybe in a future update?)
+
+Create a backup folder dedicated to the orginal, unedited files. Being able to quickly locate and double check the unedited files will save you so much time in the long run.
+
+Don't be afraid to rename your files to keep things tidy. The file names only have to match the originals when loading ingame. This tool only cares about the extension (.mmx/.mmj,.tex and .tim)
+
+I typically run the game while working on this. I directly import from Steam's /mf2/.../mon files and then mass export edits directly to that same folder. The game only reads those files during loading screens,
+so I just bounce back and forth between Town and the Ranch to quickly check edits. 
+
+The More Monsters mod has a great setting that varyies each monster's ingame size. Sub-Species or Random. 
+If you go [random monster sizes: enabled, minimum size: 100%, maximum size: 250%], you'll have a larger model to zoom in on while checking things ingame. It makes a difference.
+
+The MM0 group export works by checking the last 5 characters of the file name for matches[a,b,d,i,p,v], so you could technically mass export changes of one subspecies to another by renaming the edited file, then importing it back into the tool.
