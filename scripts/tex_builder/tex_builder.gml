@@ -9,7 +9,7 @@ function tex_builder(){
 		clut_w = tim_list[|a].clut_w;
 		clut_h = tim_list[|a].clut_h;
 		bit_mode = tim_list[|a].bit & 0b111;
-		clut_flag = tim_list[|a].has_clut;
+		clut_flag = (tim_list[|a].has_clut & 0b1) << 3;
 		
 		switch (bit_mode){
 			case 0:

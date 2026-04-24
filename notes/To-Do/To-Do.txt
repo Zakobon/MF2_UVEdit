@@ -1,0 +1,89 @@
+-------------------[to-do]-------------------
+I will turn this Groverhaus into a Groverhome
+
+
+
+==[Important]==
+-Box select is automatically writing over CLUT XY values 
+	-Change Clut X/Y title to lock button: toggle on or off CLUT xy modification
+	-Maybe create a button to show prims/tims based on clut
+	-Button to box select each tim's coords and apply the tim's clut values to prim_select during export?
+	
+-prim transparency effect is hardly noticible, add color?
+
+-modify prims to store the value modification data so warping is prevented
+	-example: x:23 -> x:10 = x_diff:-13
+		-tmd_edit.prim.tex_x = tmd_base.prim.tex_x + x_diff;
+	-or maybe redo tmd_edit to just hold all _diffs as steps and apply them to tmd_base sequentiallyon export?
+		-would need to make another copy of tmd_base to apply the steps so it displays right while you work 
+
+-draw actual TIM // Disabled due to frame drop. Need to just run all calculation for clut on import
+	-4 bit draw not implemented yet either
+	
+-search prim_select for vertex indices and create matrix list?
+	-
+	
+	[Create]
+
+
+	[Bugs]
+
+
+	[Testing]
+-test other mon files on import/export, esp MMX
+
+-test changing clut y value on export for tex
+
+
+	[Change]
+
+-finish cleaning up ui elements
+	-add a way for notes about button use to be seen
+
+
+==[Secondary]==
+
+	[Create]
+-edit background to include a border representing box select range(24 pixels) to prevent misclicks
+-add vertex select mode
+-add/remove buttons for box select, maybe keyboard shift controls?
+	-if implemented, needs a new holding list
+-maybe add a toggle to hide unselected page prims
+-Create a stand alone object for drawing TIMs and primitives
+	-maybe move them into a script so it's easier to do something with changing draw order
+
+	[Testing]
+-MMX and MMJ basic
+	-check for any loops that are run on every frame that don't need to be
+
+	[Change]
+-change TIM and Prim XY/WH controls to be horizontal and vertical instead of only horizontal
+	-maybe TIM and Prim edits can share buttons with a toggle to help with clutter
+
+	
+==[Low Priority]==
+
+	[Create]
+-change draw color on displayed values to better distinguish what can and can't be edited
+-prevent drawing prims and TIMs outside of grid area
+-find out how to draw tims as sprites 
+	-apply semi-transparency to pixels with active stp bits and a non zero value CLUT
+-maybe add ability to target a directory for export instead of selecting a single file for for a multifile export 
+	-can even check directory on a timer for the expected edit targets with a visual cue when found
+	-maybe...add option to target EVERY eligible file in a directory(risky, lots of space for accidents)
+[advanced tool]: "Hide Primitives[Vector Slice]"
+-sort all page prims into xyz lists based on their vertex coords 
+	-slider to "slice" along x, y or z vectors. Hide page_prims on one side of the slice
+		-option to "flip" the slice to swap hidden sections
+-implement full primitive type support for unused types
+-TIM image display
+==[Notes]==
+
+-currently no way to distinguish between imported TIMs and created TIMs when applying edits
+	-will probably crash if trying to apply transparency changes on a created TIMs empty CLUT data
+	
+-no clean up for created lists
+	-theres no way to make duplicates of lists atm so it should be okay
+		-before a duplicate list can be made, it's existence is checked for, regardless of size
+	
+
