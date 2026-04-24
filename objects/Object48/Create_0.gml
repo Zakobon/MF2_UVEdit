@@ -1,0 +1,11 @@
+a = [30,10,5];
+b = [20,25,15];
+//globalvar rotation;
+//rotation = 0;
+timer = 0;
+reverse_x = 0;
+reverse_y = 0;
+globalvar testx;
+testx = 0;
+globalvar testy;
+testy = 0;

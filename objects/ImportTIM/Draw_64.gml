@@ -1,0 +1,1 @@
+draw_text(x + 150,y +  50, string("File:  ") + string("\"" + ui_name_tex + "\""));

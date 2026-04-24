@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"edit_reset",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"edit_reset",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

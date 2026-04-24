@@ -1,0 +1,45 @@
+image_index = 13;
+
+globalvar prim_all;
+prim_all = 0;
+globalvar prim_old;
+prim_old = 0;
+
+globalvar ui_view_template;
+ui_view_template = 0;
+globalvar ui_bitview;
+ui_bitview = 0;
+globalvar ui_tim_view_next_page;
+ui_tim_view_next_page = 0;
+globalvar ui_tim_draw_layer;
+ui_tim_draw_layer = 0;
+
+ui_top = instance_create_layer(x + 0, y + 40, "UI_Draw", Select_Button);
+variable_instance_set(ui_top, "image_index", 4);
+variable_instance_set(ui_top, "image", 4);
+variable_instance_set(ui_top, "display", "Top Layer: Prim");
+variable_instance_set(ui_top, "enable", 0);
+o_all = instance_create_layer(x + 0, y + 80, "UI_Draw", Select_Button);
+variable_instance_set(o_all, "image_index", 4);
+variable_instance_set(o_all, "image", 4);
+variable_instance_set(o_all, "display", "All Objects");
+variable_instance_set(o_all, "enable", 0);
+variable_instance_set(o_all, "toggle_set", 1);
+p_old = instance_create_layer(x + 0, y + 120, "UI_Draw", Select_Button);
+variable_instance_set(p_old, "image_index", 4);
+variable_instance_set(p_old, "image", 4);
+variable_instance_set(p_old, "display", "Prims Unedited");
+variable_instance_set(p_old, "enable", 0);
+variable_instance_set(p_old, "toggle_set", 1);
+t_view = instance_create_layer(x + 0, y + 160, "UI_Draw", Select_Button);
+variable_instance_set(t_view, "image_index", 4);
+variable_instance_set(t_view, "image", 4);
+variable_instance_set(t_view, "display", "Template Preview");
+variable_instance_set(t_view, "enable", 0);
+variable_instance_set(t_view, "toggle_set", 1);
+tim_next = instance_create_layer(x + 0, y + 200, "UI_Draw", Select_Button);
+variable_instance_set(tim_next, "image_index", 4);
+variable_instance_set(tim_next, "image", 4);
+variable_instance_set(tim_next, "display", "Next Tim Page");
+variable_instance_set(tim_next, "enable", 0);
+variable_instance_set(tim_next, "toggle_set", 1);

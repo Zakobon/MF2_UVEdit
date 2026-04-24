@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"coord_minmax",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"coord_minmax",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,16 @@
+active = 1;
+
+x_edit = 0;
+y_edit = 0;
+x_edit_ui = 0;
+y_edit_ui = 0;
+group_xmin = 0;
+group_xmax = 0;
+group_ymin = 0;
+group_ymax = 0;
+x_scale_edit = 100;
+y_scale_edit = 100;
+rotate = 0;
+x_flip = 0;
+y_flip = 0;
+ui_prim_transparency = -1;

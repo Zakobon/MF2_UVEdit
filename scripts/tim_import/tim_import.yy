@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tim_import",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tim_import",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

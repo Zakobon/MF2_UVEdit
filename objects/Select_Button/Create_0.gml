@@ -1,0 +1,10 @@
+active = 0;
+display = "";
+image = 2;
+timer = 15
+toggle = 1;
+toggle_set = 0;
+enable = 1;
+text_x = 28;
+image_index = image;
+image_yscale = 1.1;

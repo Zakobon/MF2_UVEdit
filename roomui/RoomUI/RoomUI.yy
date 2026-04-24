@@ -1,0 +1,17 @@
+{
+  "$GMRoomUI":"",
+  "%Name":"RoomUI",
+  "children":[
+    {"$GMRUILayer":"v1","%Name":"UILayer_1","alignItems":2,"children":[],"flexDirection":0,"gridX":8,"gridY":8,"justifyContent":1,"name":"UILayer_1","nodeColour":4289524296,"paddingBottom":{"unit":1,"value":200.0,},"paddingLeft":{"unit":1,"value":200.0,},"paddingRight":{"unit":1,"value":200.0,},"paddingTop":{"unit":1,"value":200.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+  ],
+  "locked":false,
+  "name":"RoomUI",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMRoomUI",
+  "resourceVersion":"2.0",
+  "viewspaceChildren":[],
+  "visible":true,
+}

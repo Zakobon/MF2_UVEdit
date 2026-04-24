@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tmd_vertex_draw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tmd_vertex_draw",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

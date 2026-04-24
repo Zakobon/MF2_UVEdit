@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"File_mtl_Example",
+  "name":"File_mtl_Example",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

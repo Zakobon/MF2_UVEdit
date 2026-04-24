@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"vert_search",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"vert_search",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

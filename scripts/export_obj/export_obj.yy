@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"export_obj",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"export_obj",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

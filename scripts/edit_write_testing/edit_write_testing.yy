@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"edit_write_testing",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"edit_write_testing",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

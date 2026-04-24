@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"convert_xy_uv",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"convert_xy_uv",
+  "parent":{
+    "name":"MF2_UVEdit",
+    "path":"MF2_UVEdit.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
